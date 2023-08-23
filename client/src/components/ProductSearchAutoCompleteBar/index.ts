@@ -1,0 +1,1 @@
+export { ProductSearchAutoCompleteBar } from './ProductSearchAutoCompleteBar';

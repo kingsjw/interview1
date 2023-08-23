@@ -1,0 +1,1 @@
+export { ProductFilterContents } from './ProductFilterContents';

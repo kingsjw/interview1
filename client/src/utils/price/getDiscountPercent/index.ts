@@ -1,0 +1,1 @@
+export { getDiscountPercent } from './getDiscountPercent';
