@@ -10,7 +10,7 @@
 - react-modal-sheet
 - axios
 
-## 과제 설명
+## Project 설명
 
 ### Server
 
