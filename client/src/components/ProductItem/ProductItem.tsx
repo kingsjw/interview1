@@ -10,7 +10,7 @@ type ProductItemProps = {
 
 export const ProductItem = (props: ProductItemProps) => {
   const { product, cartControllCompoent } = props;
-  const { id, name, listPrice, netPrice, imageUrl, inCart } = product;
+  const { id, name, listPrice, netPrice, imageUrl } = product;
   const formattedListPrice = `${formatPrice(listPrice, 'ko-KR')}원`;
   const formattedNetPrice = `${formatPrice(netPrice, 'ko-KR')}원`;
   const discountPercent = getDiscountPercent(listPrice, netPrice);
