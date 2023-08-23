@@ -77,3 +77,10 @@ yarn install
 ```shell
 yarn dev
 ```
+
+## 실행화면
+
+https://github.com/kingsjw/lotte-helth-care-interview1/assets/28668744/1a4f2c74-4b5c-4b49-bbc5-be0451941a63
+
+
+
