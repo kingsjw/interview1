@@ -83,11 +83,13 @@ export const ProductFilterContents = (props: ProductFilterContentsProps) => {
             content={
               <ContentsContainer>
                 {children.map(child => (
-                  <CheckboxContainer
-                    key={child}
-                    onClick={() => handleCheckboxChange(child)}
-                  >
-                    <CheckboxLabel key={child} label={child} checked={selectedFilter.includes(child)} />
+                  <CheckboxContainer key={child}>
+                    <CheckboxLabel
+                      key={child}
+                      label={child}
+                      checked={selectedFilter.includes(child)}
+                      onChange={() => handleCheckboxChange(child)}
+                    />
                   </CheckboxContainer>
                 ))}
               </ContentsContainer>

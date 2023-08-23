@@ -6,13 +6,16 @@ import { Checked } from '@ui-icons';
 type CheckboxProps = {
   label: string;
   checked?: boolean;
+  onChange?: () => void;
 };
 
-export const CheckboxLabel = ({ label, checked }: CheckboxProps) => {
+export const CheckboxLabel = ({ label, checked, onChange }: CheckboxProps) => {
   const [isChecked, setIsChecked] = useState(checked ?? false);
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
+
+    onChange?.();
   };
 
   return (
