@@ -31,7 +31,6 @@ export const ProductItem = (props: ProductItemProps) => {
           alt={`${name}-상품 이미지`}
           loading="lazy"
           decoding="async"
-          style={{ objectFit: 'cover', objectPosition: 'center' }}
           onError={handleImageError}
         />
         {cartControllCompoent?.(id)}
@@ -60,7 +59,7 @@ const Item = styled.div`
 
 const ImageContainer = styled.div`
   width: 100%;
-  min-height: 152px;
+  min-height: 132px;
   background-color: #f5f5f5;
   position: relative;
 `;
@@ -69,6 +68,7 @@ const Image = styled.img`
   width: 100%;
   display: block;
   aspect-ratio: 1;
+  object-fit: cover;
 `;
 
 const Title = styled.div`
